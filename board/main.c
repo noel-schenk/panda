@@ -283,7 +283,7 @@ void tick_handler(void) {
 
       // set ignition_can to false after 2s of no CAN seen
       if (ignition_can_cnt > 2U) {
-        ignition_can = false;
+        ignition_can = true;
       }
 
       // on to the next one
